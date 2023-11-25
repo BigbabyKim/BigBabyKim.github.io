@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+/* 기본셋팅, 공통값 */
+body, input{
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #121212;
+}
+img, input, button{
+    vertical-align: top;
+}
+input, button{
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.hide{
+    position: fixed;
+    top: -99999px;
+    left: -99999px;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.portfolio{
+    height: auto;
+}
+.header{
+    z-index: 1000;
+    position: fixed;
+    top: 0vh;
+    width: 100%;
+    height: 10vw;
+    background-color: transparent;
+    transition: 0.8s;
+}
+.header.scrolled{
+    transition: 0.8s;
+    background-color: rgba(25, 28, 31, 0.8);
+}
+.h_inner{
+    width: auto;
+}
+
+.h_inner ul {
+    width: 70.5vw;
+    margin: 1vw auto 0 auto;
+    padding: 0;
+    display: flex;
+}
+
+.h_li {
+    cursor: pointer;
+    color: #fff;
+    font-size: 2.7vw;
+    margin: 1.5vw;
+    list-style: none;
+    font-weight: 700;
+}
+.h_li::after{
+    content: "";
+    display: block;
+    width: 100%;
+    transform: scaleX(0);
+    border-bottom: 2px solid #fff;
+} 
+.h_li.on::after{
+    content: "";
+    display: block;
+    width: 100%;
+    transform: scaleX(1);
+    transition: 250ms;
+    border-bottom: 2px solid #fff;
+} 
+.h_li:hover::after{
+    transform: scaleX(1);
+    transition: 250ms;
+}
+.backImg{
+    width: 110%;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+}
+.backImg img{
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+    margin-left: -2.5vw;
+}
+.container{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 500;
+    height: auto;
+}
+.home{
+    padding: 15vw 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.about{
+    width: 100%;
+    background-color: #fff;
+}
+.backBlack{
+    text-indent: -99999px;
+    width: 100%;
+    height: 810px;
+    background-color: #000;
+}
+.homeText{
+    text-align: center;
+    margin-bottom: 5vw;
+}
+.h_text{
+    color: #fff;
+    font-size: 2vw;
+}
+.h_text.one{
+    margin-left: 2vw;
+    font-weight: 700;
+    font-size: 8vw;
+}
+.h_text.two{
+    font-weight: 700;
+    font-size: 7vw;
+    margin-bottom: 2vw;
+}
+.bi.bi-arrow-down-circle{
+    width: 7vw;
+    height: 7vw;
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-0.8vw);
+    }
+}
+
+.row {
+    cursor: pointer;
+    animation: bounce 1.5s infinite; /* 애니메이션 적용 */
+
+}
+.footer{
+}
+@media screen and (min-width:768px) {
+    /* 태블릿 헤더  */
+    .header{
+        height: 6vw;
+    }
+    .h_inner ul {
+        width: 45vw;
+        margin-top:0.5vw
+    }
+    
+    .h_li {
+        font-size: 1.7vw;
+        margin: 1vw;
+    }
+    .homeText{
+        margin-bottom: 5vw;
+    }
+    .h_text{
+        color: #fff;
+        font-size: 2vw;
+    }
+    .h_text.one{
+        margin-left: 2vw;
+        font-weight: 700;
+        font-size: 6vw;
+    }
+    .h_text.two{
+        font-weight: 700;
+        font-size: 5vw;
+        margin-bottom: 2vw;
+    }
+    .bi.bi-arrow-down-circle{
+        width: 7vw;
+        height: 7vw;
+    }
+}
+@media screen and (min-width:1024px) {
+        /* pc 헤더  */
+        .h_inner ul {
+            width: 36.7vw;
+        }
+        
+        .h_li {
+            font-size: 1.3vw;
+            margin: 1vw;
+        }
+        .homeText{
+            margin-bottom: 5vw;
+        }
+        .h_text{
+            font-size: 1.7vw;
+        }
+        .h_text.one{
+            font-size: 4vw;
+        }
+        .h_text.two{
+            font-weight: 700;            font-size: 4vw;
+            margin-bottom: 2vw;
+        }
+        .bi.bi-arrow-down-circle{
+            width: 3vw;
+            height: 3vw;
+        }
+
+}
+@media screen and (min-width:1440px) {
+    /* 1440 헤더  */
+    .home{
+        padding: 216px 0;
+    }
+    .h_inner ul {
+        width: 420px;
+    }
+    
+    .h_li {
+        font-size: 15px;
+        margin: 11px;
+    }
+    .homeText{
+        margin-bottom: 73px;
+    }
+    .h_text{
+        font-size: 24px;
+    }
+    .h_text.one{
+        margin-left: 28px;
+        font-size: 58px;
+    }
+    .h_text.two{
+        font-size: 57px;
+        margin-bottom: 28px;
+    }
+    .bi.bi-arrow-down-circle{
+        width: 43px;
+        height: 43px;
+    }
+
+}
