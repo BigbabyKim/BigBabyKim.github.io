@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
 
-    <title>Portfolio</title>
+<head>
+  <meta charset="utf-8" />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy"
-      rel="stylesheet"
-    />
+  <title>Portfolio</title>
 
-    <link rel="stylesheet" href="./assets/css/index.css">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy"
+    rel="stylesheet" />
 
-  </head>
+  <link rel="stylesheet" href="./assets/css/index.css">
 
-  <body>
-    <section class="portfolio">
-      <!-- header -->
-      <div class="backBlack">d</div>
-      <div class="backImg">
-        <img src="assets/img/main1.jpg">
+</head>
+
+<body>
+  <section class="portfolio">
+    <!-- header -->
+    <div class="backBlack">d</div>
+    <div class="backImg">
+      <img src="assets/img/main1.jpg">
+    </div>
+    <div class="header">
+      <div class="h_inner">
+        <ul>
+          <li class="h_li on" onclick="scrollToSection(0)">HOME</li>
+          <li class="h_li" onclick="scrollToSection(1)">ABOUT</li>
+          <li class="h_li" onclick="scrollToSection(2)">RESUME</li>
+          <li class="h_li" onclick="scrollToSection(3)">PORTFOLIO</li>
+          <li class="h_li" onclick="scrollToSection(4)">CONTACT</li>
+        </ul>
       </div>
-      <div class="header">
-        <div class="h_inner">
-          <ul>
-            <li class="h_li on" onclick="scrollToSection(0)">HOME</li>
-            <li class="h_li" onclick="scrollToSection(1)">ABOUT</li>
-            <li class="h_li" onclick="scrollToSection(2)">RESUME</li>
-            <li class="h_li" onclick="scrollToSection(3)">PORTFOLIO</li>
-            <li class="h_li" onclick="scrollToSection(4)">CONTACT</li>
-          </ul>
+    </div>
+    <!-- container -->
+    <div class="container">
+      <div class="c_content home" id="section0">
+        <div class="homeText">
+          <div class="h_text one">HELLO !</div>
+          <div class="h_text two">I'm Woo Ryang Kim</div>
+          <div class="h_text three">환영합니다.</div>
+          <div class="h_text four">새로운 계획과 도전을 자극제로 삼고 있는 김우량입니다.</div>
+          <div class="h_text five">스스로에게 과제를 내어주며 계속해서 발전해 나가고자 합니다.</div>
+        </div>
+        <div class="row" onclick="scrollToSection(1)">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+          </svg>
         </div>
       </div>
-      <!-- container -->
-      <div class="container">
-        <div class="c_content home" id="section0">
-          <div class="homeText">
-            <div class="h_text one">HELLO !</div>
-            <div class="h_text two">I'm Woo Ryang Kim</div>
-            <div class="h_text three">환영합니다.</div>
-            <div class="h_text four">새로운 계획과 도전을 자극제로 삼고 있는 김우량입니다.</div>
-            <div class="h_text five">스스로에게 과제를 내어주며 계속해서 발전해 나가고자 합니다.</div>
-          </div>
-          <div class="row" onclick="scrollToSection(1)">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
-            </svg>
-          </div>
-        </div>
-        
-        <div class="c_content about" id="section1">
+
+      <div class="c_content about" id="section1">
+        <div class="inner">
           <div class="m1_title">
             <h3>ABOUT ME</h3>
             <h2>ABOUT ME</h2>
@@ -59,26 +61,219 @@
             <div class="conImg">
               <img src="assets/img/main2_face.jpg">
             </div>
+            <div class="conText">
+              <div class="m2_text1">
+                <h2 class="m2_title">INFO</h2>
+                <div class="textBox">
+                  <ul class="textUl">
+                    <li class="m2_li">
+                      <div class="label">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#666" class="bi bi-person-circle"
+                          viewBox="0 0 16 16">
+                          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                          <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                        </svg>
+                        <span>
+                          NAME
+                        </span>
+                      </div>
+                      <span class="conArea">김우량</span>
+                    </li>
+                    <li class="m2_li">
+                      <div class="label">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#666" class="bi bi-telephone" viewBox="0 0 16 16">
+                          <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                        <span>
+                          PHONE
+                        </span>
+                      </div>
+                      <span class="conArea">010-3008-3455</span>
+                    </li>
+                    <li class="m2_li">
+                      <div class="label">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#666" class="bi bi-balloon" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M8 9.984C10.403 9.506 12 7.48 12 5a4 4 0 0 0-8 0c0 2.48 1.597 4.506 4 4.984M13 5c0 2.837-1.789 5.227-4.52 5.901l.244.487a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3.177 3.177 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.244-.487C4.789 10.227 3 7.837 3 5a5 5 0 0 1 10 0m-6.938-.495a2.003 2.003 0 0 1 1.443-1.443C7.773 2.994 8 2.776 8 2.5c0-.276-.226-.504-.498-.459a3.003 3.003 0 0 0-2.46 2.461c-.046.272.182.498.458.498s.494-.227.562-.495" />
+                        </svg>
+                        <span>
+                          BIRTH
+                        </span>
+                      </div>
+                      <span class="conArea">1998.01.24</span>
+                    </li>
+
+                  </ul>
+                  <ul class="textUl">
+                    <li class="m2_li">
+                      <div class="label city">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#666" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                          <path
+                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        </svg>
+                        <span>
+                          CITY
+                        </span>
+                      </div>
+                      <span class="conArea">울산광역시 남구</span>
+                    </li>
+                    <li class="m2_li pc">
+                      <div class="label">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#666" class="bi bi-pencil-square"
+                          viewBox="0 0 16 16">
+                          <path
+                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                          <path fill-rule="evenodd"
+                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                        </svg>
+                        <span>
+                          EDUCATION
+                        </span>
+                      </div>
+                      <div class="conArea">
+                        <span>영산대학교</span>
+                        <span>컴퓨터공학과</span>
+                      </div>
+                    </li>
+                    <li class="m2_li pc">
+                      <div class="label">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#666" class="bi bi-postcard" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0zM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5M10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM13 8h-2V6h2z" />
+                        </svg>
+                        <span class="label">WEBSITE</span>
+                      </div>
+                      <div class="site">
+                        <a class="conArea" target="_blank"
+                          href="https://github.com/BigbabyKim/BigbabyKim.github.io">bigbabykim.github.io</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#444" class="bi bi-box-arrow-in-up-left"
+                          viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                            d="M9.636 13.5a.5.5 0 0 1-.5.5H2.5A1.5 1.5 0 0 1 1 12.5v-10A1.5 1.5 0 0 1 2.5 1h10A1.5 1.5 0 0 1 14 2.5v6.636a.5.5 0 0 1-1 0V2.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5" />
+                          <path fill-rule="evenodd"
+                            d="M5 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H6.707l8.147 8.146a.5.5 0 0 1-.708.708L6 6.707V10.5a.5.5 0 0 1-1 0z" />
+                        </svg>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="m2_text2">
+                <h2 class="m2_title">SKILLS</h2>
+                <div class="textBox">
+                  <ul class="textUl1">
+                    <li class="m2_li">
+                      <div class="label">
+                        <span>HTML5</span>
+                        <span class="percent pc">90%</span>
+                      </div>
+                      <div class="bar">
+                        <progress value="90" max="100"></progress>
+                      </div>
+                      <span class="percent mo">90%</span>
+                    </li>
+                    <li class="m2_li">
+                      <div class="label">
+                        <span>CSS3</span>
+                        <span class="percent pc">90%</span>
+                      </div>
+                      <div class="bar">
+                        <progress value="90" max="100"></progress>
+                      </div>
+                      <span class="percent mo">90%</span>
+                    </li>
+                    <li class="m2_li">
+                      <div class="label">
+                        <span>JAVASCRIPT</span>
+                        <span class="percent pc">80%</span>
+                      </div>
+                      <div class="bar">
+                        <progress value="80" max="100"></progress>
+                      </div>
+                      <span class="percent mo">80%</span>
+                    </li>
+                    <li class="m2_li">
+                      <div class="label">
+                        <span>JAVA</span>
+                        <span class="percent pc">80%</span>
+                      </div>
+                      <div class="bar">
+                        <progress value="80" max="100"></progress>
+                      </div>
+                      <span class="percent mo">80%</span>
+                    </li>
+                  </ul>
+                  <ul class="textUl1">
+                    <li class="m2_li">
+                      <div class="label">
+                        <span>ORACLE</span>
+                        <span class="percent pc">85%</span>
+                      </div>
+                      <div class="bar">
+                        <progress value="85" max="100"></progress>
+                      </div>
+                      <span class="percent mo">85%</span>
+                    </li>
+                    <li class="m2_li">
+                      <div class="label">
+                        <span>SPRING</span>
+                        <span class="percent pc">80%</span>
+                      </div>
+                      <div class="bar">
+                        <progress value="80" max="100"></progress>
+                      </div>
+                      <span class="percent mo">80%</span>
+                    </li>
+                    <li class="m2_li">
+                      <div class="label">
+                        <span>PYTHON</span>
+                        <span class="percent pc">75%</span>
+                      </div>
+                      <div class="bar">
+                        <progress value="75" max="100"></progress>
+                      </div>
+                      <span class="percent mo">75%</span>
+                    </li>
+                    <li class="m2_li">
+                      <div class="label">
+                        <span>GIT</span>
+                        <span class="percent pc">70%</span>
+                      </div>
+                      <div class="bar">
+                        <progress value="70" max="100"></progress>
+                      </div>
+                      <span class="percent mo">70%</span>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="c_content resume" id="section2">
-          resume
-        </div>
-
-        <div class="c_content portfolio" id="section3">
-          portfolio
-        </div>
-        <div class="c_content contact" id="section4">
-          contact
-        </div>
       </div>
-      <!-- footer -->
-      <div class="footer">
-        푸터
-      </div>
-    </section>
 
-    <script src="assets/js/main.js"></script>
-  </body>
+      <div class="c_content resume" id="section2">
+        resume
+      </div>
+
+      <div class="c_content portfolio" id="section3">
+        portfolio
+      </div>
+      <div class="c_content contact" id="section4">
+        contact
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      푸터
+    </div>
+  </section>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>

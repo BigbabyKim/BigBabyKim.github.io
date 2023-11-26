@@ -35,6 +35,10 @@ a {
     overflow: hidden;
 }
 
+.pc {
+    display: none;
+}
+
 .portfolio {
     height: auto;
 }
@@ -134,7 +138,7 @@ a {
 .backBlack {
     text-indent: -99999px;
     width: 100%;
-    height: 810px;
+    height: 3000px;
     background-color: #000;
 }
 
@@ -169,7 +173,7 @@ a {
 .c_content.about {
     position: relative;
     width: 100%;
-    padding: 0;
+    padding: 0 0 10vw 0;
 }
 
 .m1_title {
@@ -199,7 +203,7 @@ a {
 }
 
 .conImg {
-
+    margin-bottom: 6vw;
     text-align: center;
 }
 
@@ -207,7 +211,52 @@ a {
     width: 30vw;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.8);
+    box-shadow: 0 0.2vw 1vw 0 rgba(68, 68, 68, 0.8);
+}
+
+.textUl {
+    margin: 0;
+    padding: 0 20vw;
+}
+
+.m2_li {
+    list-style: none;
+    display: inline-flex;
+    margin: 0 auto 5vw auto;
+}
+
+.pc {
+    display: none;
+}
+
+.label svg {
+    width: 5vw;
+    height: 5vw;
+    margin-top: 1.5vw;
+    margin-right: 2vw;
+}
+
+.label {
+    width: 28vw;
+    color: #666;
+    display: flex;
+    font-size: 5vw;
+    font-weight: 700;
+}
+
+.conArea {
+    margin-top: 1vw;
+    color: #444;
+    font-weight: 700;
+    font-size: 4vw;
+}
+
+.m2_title {
+    color: #333;
+    font-weight: 700;
+    text-align: center;
+    font-size: 7vw;
+    margin-bottom: 5vw;
 }
 
 @keyframes bounce {
@@ -229,11 +278,45 @@ a {
 
 }
 
-.footer {}
+.bar progress {
+    margin-top: -1vw;
+    width: 40vw;
+    height: 8vw;
+    margin-right: 3vw;
+}
+
+.textUl1 {
+    padding: 0 10vw;
+}
+
+.m2_text2 .m2_li .label {
+    width: 28vw;
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+.mo {
+    display: block;
+}
+
+.percent {
+    margin-top: 0.5vw;
+    font-size: 3vw;
+    font-weight: 700;
+    color: #666;
+}
 
 @media screen and (min-width:768px) {
 
     /* 태블릿 헤더  */
+    .pc {
+        display: block;
+    }
+
+    .mo {
+        display: none;
+    }
+
     .header {
         height: 6vw;
     }
@@ -275,6 +358,10 @@ a {
     }
 
     /* 태블릿 메인2 */
+    .m1_title {
+        margin-bottom: 5vw;
+    }
+
     .m1_title h3 {
         top: 15vw;
         font-size: 9.5vw;
@@ -287,12 +374,91 @@ a {
 
     .conImg img {
         width: 30vw;
-        height: auto;
         border-radius: 10px;
-        box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.8);
     }
 
+    /* 메인2 텍스트 */
+    .m2_li {
+        margin: 0 auto 3vw auto;
+        display: flex;
+    }
 
+    .label>svg {
+        width: 3vw;
+        height: 3vw;
+        margin-top: 1vw;
+        margin-right: 2vw;
+    }
+
+    .label {
+        width: 28vw;
+        font-size: 3vw;
+    }
+
+    .conArea {
+        margin-top: 0.3vw;
+        font-size: 2.5vw;
+    }
+
+    .bi.bi-box-arrow-in-up-left {
+        width: 2.5vw;
+        height: 2.5vw;
+        margin: 1.2vw;
+        cursor: pointer;
+    }
+
+    .site {
+        position: relative;
+        display: flex;
+    }
+
+    .site svg {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+    .site::after {
+        position: absolute;
+        content: "";
+        bottom: 0.3vw;
+        display: block;
+        width: 97%;
+        transition: 250ms;
+        transform: scaleX(0);
+        border-bottom: 0.3vw solid #666;
+    }
+
+    .site:hover::after {
+        transform: scaleX(1);
+        transition: 250ms;
+    }
+
+    /* SKILLS */
+    .textUl1 {
+        padding: 0 15vw;
+    }
+
+    .m2_text2 .m2_li {
+        display: block;
+    }
+
+    .m2_text2 .m2_li .label {
+        width: 100%;
+        justify-content: space-between;
+        font-size: 2.5vw;
+        margin-bottom: 1vw;
+    }
+
+    .bar progress {
+        width: 100%;
+        height: 4vw;
+        margin-right: 0vw;
+    }
+
+    .percent {
+        margin-top: 0vw;
+        font-size: 2.5vw;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -341,6 +507,14 @@ a {
         margin-bottom: 2.1vw;
     }
 
+    .m2_text1 {
+        margin-bottom: 2vw;
+    }
+
+    .conImg {
+        margin-right: 2vw;
+    }
+
     .conImg img {
         width: 30vw;
         height: auto;
@@ -348,6 +522,109 @@ a {
         box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.8);
     }
 
+    .content {
+        display: flex;
+        padding: 0 2vw;
+    }
+
+    .textBox {
+        display: flex;
+    }
+
+    .textUl {
+        padding: 0;
+        margin: 0 2vw;
+
+    }
+
+    .m2_li {
+        margin: 0 auto 1vw auto;
+    }
+
+    .label>svg {
+        width: 1.7vw;
+        height: 1.7vw;
+        margin-top: 0.5vw;
+        margin-right: 0.5vw;
+    }
+
+    .label {
+        width: 10vw;
+        font-size: 1.7vw;
+    }
+
+    .pc .label {
+        width: 13vw;
+    }
+
+    .city {
+        width: 13vw;
+    }
+
+    .conArea {
+        margin-top: 0.2vw;
+        font-size: 1.5vw;
+    }
+
+    .bi.bi-box-arrow-in-up-left {
+        width: 1.5vw;
+        height: 1.5vw;
+        margin: 0.5vw;
+        margin-top: 0.7vw;
+    }
+
+    .site::after {
+        border-bottom: 0.2vw solid #666;
+    }
+
+    .textBox {
+        display: flex;
+    }
+
+    .m2_title {
+        text-align: left;
+        margin: 0;
+        margin-left: 2vw;
+        font-size: 2vw;
+        margin-bottom: 1vw;
+    }
+
+    /* SKILLS */
+    .m2_text2 .m2_title {
+        margin-bottom: 0;
+        margin-left: 1.1vw;
+    }
+
+    .textUl1 {
+        width: 27vw;
+        padding: 0 1vw;
+    }
+
+    .m2_text2 .m2_li {
+        display: block;
+    }
+
+    .m2_text2 .m2_li .label {
+        width: 100%;
+        justify-content: space-between;
+        font-size: 1.5vw;
+        margin-bottom: 0vw;
+    }
+
+    .bar progress {
+        width: 100%;
+        height: 2vw;
+        margin-right: 0vw;
+    }
+
+    .percent {
+        margin-top: 0vw;
+        font-size: 1.4vw;
+    }
+
+    .m2_text2 {
+        padding: 0 1.2vw;
+    }
 }
 
 @media screen and (min-width:1440px) {
@@ -388,8 +665,12 @@ a {
         width: 43px;
         height: 43px;
     }
-       /* 1440px 메인2 */
-       .m1_title h3 {
+
+    /* 1440px 메인2 */
+    .m1_title{
+        margin-bottom: 72px;
+    }
+    .m1_title h3 {
         top: 136px;
         font-size: 86px;
     }
@@ -398,7 +679,10 @@ a {
         font-size: 65px;
         margin-bottom: 30px;
     }
-
+    .conImg{
+        margin-right: 28px;
+        margin-bottom: 0;
+    }
     .conImg img {
         width: 432px;
         height: auto;
@@ -406,4 +690,107 @@ a {
         box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.8);
     }
 
+    .inner {
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    .m2_text1 {
+        margin-bottom: 30px;
+    }
+
+    .content {
+        padding: 0 28px;
+    }
+
+    .textUl {
+        padding: 0;
+        margin: 0 28px;
+
+    }
+
+    .m2_li {
+        margin-bottom: 14px;
+    }
+
+    .label>svg {
+        width: 24px;
+        height: 24px;
+        margin-top: 7px;
+        margin-right: 7px;
+    }
+
+    .label {
+        width: 144px;
+        font-size: 25px;
+    }
+
+    .pc .label {
+        width: 187px;
+    }
+
+    .city {
+        width: 187px;
+    }
+
+    .conArea {
+        margin-top: 5px;
+        font-size: 19px;
+    }
+
+    .bi.bi-box-arrow-in-up-left {
+        width: 19px;
+        height: 19px;
+        margin: 10px;
+    }
+
+    .site::after {
+        border-bottom: 2px solid #666;
+    }
+
+
+    .m2_title {
+        text-align: left;
+        margin: 0;
+        margin-left: 29px;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    /* SKILLS */
+    .m2_text2 .m2_title {
+        margin-bottom: 0;
+        margin-left: 15px;
+    }
+
+    .textUl1 {
+        width: 417px;
+        padding: 0 14px;
+    }
+
+    .m2_text2 .m2_li {
+        display: block;
+    }
+
+    .m2_text2 .m2_li .label {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+
+    .bar progress {
+        height: 28px;
+        margin-right: 0;
+    }
+
+    .percent {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .m2_text2 {
+        padding: 0 20px;
+    }
+    .c_content.about{
+        padding-bottom: 143px;
+    }
 }
