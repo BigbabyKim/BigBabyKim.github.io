@@ -1021,6 +1021,8 @@ li {
             margin-bottom: 14px;
         }
         .btnList_pc .btn{
+            height: auto;
+            font-size: 29px;
             margin-bottom: 43px;
         }
         .slide1{
@@ -1040,6 +1042,7 @@ li {
         }
         .hiddenBtns{
             height: 26px;
+            margin-bottom: 30px;
         }
         .hiddenBtn{
             width: 116px;
