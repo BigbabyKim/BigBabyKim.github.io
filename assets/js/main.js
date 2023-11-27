@@ -37,3 +37,18 @@ function scrollToSection(sectionNumber) {
     });
   }
 }
+
+/* 포토폴리오 */
+$('.portSlide').slick({
+  arrows: false,
+  asNavFor: '.btnList',
+});
+$('.btnList').slick({
+  // slidesToShow: 3,
+  // slidesToScroll: 1,
+  arrows : false,
+  asNavFor: '.portSlide',
+  centerMode: true,
+  focusOnSelect: true,
+  variableWidth: true
+});
