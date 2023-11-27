@@ -3,7 +3,6 @@ window.addEventListener('scroll', function () {
   var scrolled = window.scrollY > 0;
   
   header.classList.toggle('scrolled', scrolled);
-    // 각 섹션에 도달했을 때 h_li에 on 클래스 추가
     document.querySelectorAll('.c_content').forEach(function (section, index) {
       var hLi = document.querySelectorAll('.h_li')[index];
       var headerHeight = document.querySelector('.header').offsetHeight;
@@ -52,3 +51,20 @@ $('.btnList').slick({
   focusOnSelect: true,
   variableWidth: true
 });
+/* 포토폴리오 pc ver */
+$('.portSlide_pc').slick({
+  arrows: false,
+  asNavFor: '.btnList_pc',
+});
+$('.btnList_pc').slick({
+  arrows : false,
+  asNavFor: '.portSlide_pc',
+  focusOnSelect: true,
+  vertical : true,
+  slidesToShow : 4
+});
+$('.btnList_pc .btn').click(function(){
+  $('.hiddenBtns').removeClass('on')
+  $('.hiddenBtns').stop().slideUp();
+  $(this).find('.hiddenBtns').stop().slideDown();
+})
