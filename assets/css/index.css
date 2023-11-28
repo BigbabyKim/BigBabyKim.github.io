@@ -179,7 +179,9 @@ a {
     padding: 0 0 10vw 0;
     background-color: #fff;
 }
-
+.c_content.resume, .c_content.contact{
+    background-color: #dadada;
+}
 .m1_title {
     position: relative;
     text-align: center;
@@ -323,7 +325,7 @@ li {
 
 .btnList {
     display: flex;
-    margin-bottom: 10vw;
+    margin-bottom: 5vw;
 }
 
 .btn {
@@ -377,9 +379,13 @@ li {
 .slideImg {
     width: 100%;
     height: 50vw;
-    background-color: #777;
     border-radius: 2vw;
     margin-bottom: 3vw;
+}
+.slideImg img{
+    width: 88%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .slideBtns {
@@ -410,6 +416,14 @@ li {
 }
 .mo2{
     display: block;
+}
+.slideImg.webMo> img{
+    width: 54%;
+    border-radius: 3vw;
+}
+.slideImg img{
+    border-radius: 3vw;
+    border: 1px solid #dadada;
 }
 
 @media screen and (min-width:768px) {
@@ -788,17 +802,25 @@ li {
         padding: 0 1.2vw;
     }
     /* 포트폴리오 */
+    .c_content.portfolio{
+        padding: 0;
+    }
     .port_content.pc2{
         display: flex;
     }
     .btnList_pc{
+        position: relative;
         width: 30vw;
+        margin-top: 5vw;
         height: auto;
         display: block;
     }
     .btnList_pc .btn{
         height: auto;
         margin-bottom: 3vw;
+    }
+    .btnList_pc>.slick-list> .slick-track{
+        transform: translate3d(0px, 0px, 0px) !important;
     }
     .btnList_pc .btn span{
         font-size: 2vw;
@@ -829,6 +851,17 @@ li {
     .hiddenBtn:hover{
         color: #dadada;
         background-color: #444;
+    }
+    .slideImg img{
+        width: 98%;
+        height: 98%;
+        border-radius: 1vw;
+        box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.5);
+    }
+    .slideImg.webPc> img{
+        width: 70%;
+        border-radius: 1vw;
+        margin: 0 auto;
     }
 }
 
@@ -1006,13 +1039,14 @@ li {
         .c_content.portfolio .inner{
             width: 1440px;
             margin: 0 auto;
-            padding: 0 10px;
+            padding: 0 10px 50px 10px;
         }
         .port_content{
             width: 1000px;
             margin: 0 auto;
         }
         .btnList_pc{
+            margin-top: 50px;
             width: 432px;
             height: 600px;
         }
@@ -1035,6 +1069,12 @@ li {
             margin-bottom: 0;
             width: 100%;
             height: 600px;
+           
+        }
+        .slideImg img{
+            width: 98%;
+            height: 98%;
+            box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.5);
         }
         .portSlide_pc{
             width: 550px;
