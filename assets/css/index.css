@@ -179,9 +179,12 @@ a {
     padding: 0 0 10vw 0;
     background-color: #fff;
 }
-.c_content.resume, .c_content.contact{
+
+.c_content.resume,
+.c_content.contact {
     background-color: #dadada;
 }
+
 .m1_title {
     position: relative;
     text-align: center;
@@ -336,9 +339,10 @@ li {
     color: #666;
 }
 
-.btn span{
+.btn span {
     display: inline-block;
 }
+
 .btn span::after {
     content: "";
     display: block;
@@ -347,6 +351,7 @@ li {
     transform: scaleX(0);
     border-bottom: 0.7vw solid #333;
 }
+
 .btn.slick-slide.slick-current {
     color: #333;
 }
@@ -382,7 +387,8 @@ li {
     border-radius: 2vw;
     margin-bottom: 3vw;
 }
-.slideImg img{
+
+.slideImg img {
     width: 88%;
     height: 100%;
     margin: 0 auto;
@@ -411,19 +417,44 @@ li {
     color: #f3f3f3;
     background-color: #333;
 }
-.pc2{
+
+.pc2 {
     display: none;
 }
-.mo2{
+
+.mo2 {
     display: block;
 }
-.slideImg.webMo> img{
+
+.slideImg.webMo>img {
     width: 54%;
     border-radius: 3vw;
 }
-.slideImg img{
+
+.slideImg img {
     border-radius: 3vw;
     border: 1px solid #dadada;
+}
+
+/* contact */
+.c_content.contact>.inner>.texBox>.textUl {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.m2_li.git>.label {
+    width: 7vw;
+}
+
+.m2_li.git>a {
+    margin-top: 0.5vw;
+    display: inline-flex;
+}
+.m2_li.git{
+    justify-content: center;
+}
+.conArea.git{
+    margin-top: 0;
 }
 
 @media screen and (min-width:768px) {
@@ -605,9 +636,11 @@ li {
     .btn span::after {
         border-bottom: 0.4vw solid #333;
     }
+
     .btn.slick-slide.slick-current span::after {
         border-bottom: 0.4vw solid #333;
     }
+
     .btn:hover span::after {
         border-bottom: 0.4vw solid #333;
     }
@@ -623,23 +656,41 @@ li {
 
     .slideBtn {
         width: 15vw;
-        border: 0.3vw solid #666;
+        border: 0.1vw solid #666;
         font-size: 2.5vw;
         margin: 0 10vw;
     }
 
     .slideBtn:hover {
-        border: 0.3vw solid #444;
+        border: 0.1vw solid #444;
+    }
+
+    .m2_li.contact>.label {
+        width: 18vw;
+    }
+
+    .m2_li.git>.label {
+        width: 5vw;
+    }
+
+    .m2_li.git>a {
+        margin-top: 0.5vw;
+    }
+
+    .m2_li.contact {
+        justify-content: center;
     }
 }
 
 @media screen and (min-width:1024px) {
-    .mo2{
+    .mo2 {
         display: none;
     }
-    .pc2{
+
+    .pc2 {
         display: block;
     }
+
     /* pc 헤더  */
     .h_inner ul {
         width: 36.7vw;
@@ -801,44 +852,55 @@ li {
     .m2_text2 {
         padding: 0 1.2vw;
     }
+
     /* 포트폴리오 */
-    .c_content.portfolio{
+    .c_content.portfolio {
         padding: 0;
     }
-    .port_content.pc2{
+
+    .port_content.pc2 {
         display: flex;
     }
-    .btnList_pc{
+
+    .btnList_pc {
         position: relative;
         width: 30vw;
         margin-top: 5vw;
         height: auto;
         display: block;
     }
-    .btnList_pc .btn{
+
+    .btnList_pc .btn {
         height: auto;
         margin-bottom: 3vw;
     }
-    .btnList_pc>.slick-list> .slick-track{
+
+    .btnList_pc>.slick-list>.slick-track {
         transform: translate3d(0px, 0px, 0px) !important;
     }
-    .btnList_pc .btn span{
+
+    .btnList_pc .btn span {
         font-size: 2vw;
     }
-    .portSlide_pc{
+
+    .portSlide_pc {
         width: 50vw;
     }
-    .hiddenBtns{
+
+    .hiddenBtns {
         display: none;
         height: 5vw;
     }
-    .hiddenBtns.on{
+
+    .hiddenBtns.on {
         display: block;
     }
-    .btn span{
+
+    .btn span {
         margin-bottom: 1vw;
     }
-    .hiddenBtn{
+
+    .hiddenBtn {
         margin: 0 auto;
         width: 8vw;
         border: 1px solid #444;
@@ -848,20 +910,47 @@ li {
         margin-bottom: 0.7vw;
         font-weight: 700;
     }
-    .hiddenBtn:hover{
+
+    .hiddenBtn:hover {
         color: #dadada;
         background-color: #444;
     }
-    .slideImg img{
+
+    .slideImg img {
         width: 98%;
         height: 98%;
         border-radius: 1vw;
         box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.5);
     }
-    .slideImg.webPc> img{
+
+    .slideImg.webPc>img {
         width: 70%;
         border-radius: 1vw;
         margin: 0 auto;
+    }
+
+    /* contact */
+    .c_content.contact {
+        padding: 0;
+        padding-bottom: 7vw;
+    }
+
+    .c_content.contact>.inner>.textBox {
+        justify-content: center;
+    }
+
+    .m2_li.contact>.label {
+        width: 10vw;
+    }
+
+    .m2_li.git>.label {
+        width: 3.8vw;
+    }
+    .m2_li.git{
+        justify-content: center;
+    }
+    .m2_li.git>a {
+        margin-top: 0.35vw;
     }
 }
 
@@ -908,7 +997,9 @@ li {
     .m1_title {
         margin-bottom: 72px;
     }
-
+    .textUl{
+        margin-right: 115px;
+    }
     .m1_title h3 {
         top: 136px;
         font-size: 86px;
@@ -947,11 +1038,11 @@ li {
     .textUl {
         padding: 0;
         margin: 0 56px 0 28px;
-
     }
 
+
     .m2_li {
-        margin-bottom: 14px;
+        margin: 0 auto 14px auto;
     }
 
     .label>svg {
@@ -1035,68 +1126,98 @@ li {
     .c_content.about {
         padding-bottom: 143px;
     }
-        /* 포트폴리오 */
-        .c_content.portfolio .inner{
-            width: 1440px;
-            margin: 0 auto;
-            padding: 0 10px 50px 10px;
-        }
-        .port_content{
-            width: 1000px;
-            margin: 0 auto;
-        }
-        .btnList_pc{
-            margin-top: 50px;
-            width: 432px;
-            height: 600px;
-        }
-        .btnList_pc .btn span{
-            font-size: 29px;
-            margin-bottom: 14px;
-        }
-        .btnList_pc .btn{
-            height: auto;
-            font-size: 29px;
-            margin-bottom: 43px;
-        }
-        .slide1{
-            padding: 0 20px;
-            width: 100%;
-            height: 600px;
-        }
-        .slideImg{
-            border-radius: 7px;
-            margin-bottom: 0;
-            width: 100%;
-            height: 600px;
-           
-        }
-        .slideImg img{
-            width: 98%;
-            height: 98%;
-            box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.5);
-        }
-        .portSlide_pc{
-            width: 550px;
-            height: 620px;
-        }
-        .hiddenBtns{
-            height: 26px;
-            margin-bottom: 30px;
-        }
-        .hiddenBtn{
-            width: 116px;
-            font-size: 17px;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-        .btn span::after {
-            border-bottom: 2px solid #333;
-        }
-        .btn.slick-slide.slick-current span::after {
-            border-bottom: 2px solid #333;
-        }
-        .btn:hover span::after {
-            border-bottom: 2px solid #333;
-        }
+
+    /* 포트폴리오 */
+    .c_content.portfolio .inner {
+        width: 1440px;
+        margin: 0 auto;
+        padding: 0 10px 50px 10px;
+    }
+
+    .port_content {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .btnList_pc {
+        margin-top: 50px;
+        width: 432px;
+        height: 600px;
+    }
+
+    .btnList_pc .btn span {
+        font-size: 29px;
+        margin-bottom: 14px;
+    }
+
+    .btnList_pc .btn {
+        height: auto;
+        font-size: 29px;
+        margin-bottom: 43px;
+    }
+
+    .slide1 {
+        padding: 0 20px;
+        width: 100%;
+        height: 600px;
+    }
+
+    .slideImg {
+        border-radius: 7px;
+        margin-bottom: 0;
+        width: 100%;
+        height: 600px;
+
+    }
+
+    .slideImg img {
+        width: 98%;
+        height: 98%;
+        box-shadow: 0 5px 8px 0 rgba(68, 68, 68, 0.5);
+    }
+
+    .portSlide_pc {
+        width: 550px;
+        height: 620px;
+    }
+
+    .hiddenBtns {
+        height: 26px;
+        margin-bottom: 30px;
+    }
+
+    .hiddenBtn {
+        width: 116px;
+        font-size: 17px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    .btn span::after {
+        border-bottom: 2px solid #333;
+    }
+
+    .btn.slick-slide.slick-current span::after {
+        border-bottom: 2px solid #333;
+    }
+
+    .btn:hover span::after {
+        border-bottom: 2px solid #333;
+    }
+
+    /* contact */
+    .c_content.contact {
+        padding: 0;
+        padding-bottom: 80px;
+    }
+    .m2_li.contact>.label {
+        width: 140px;
+    }
+
+    .m2_li.git>.label {
+        width: 54px;
+    }
+    .m2_li.git>a {
+        margin-top: 5px;
+    }
 }
