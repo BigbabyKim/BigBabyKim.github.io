@@ -63,7 +63,7 @@ a {
 }
 
 .h_inner ul {
-    width: 70.5vw;
+    width: 56.6vw;
     margin: 1vw auto 0 auto;
     padding: 0;
     display: flex;
@@ -512,7 +512,7 @@ li {
     }
 
     .h_inner ul {
-        width: 45vw;
+        width: 36.3vw;
         margin-top: 0.5vw
     }
 
@@ -755,7 +755,7 @@ li {
         height: 5vw;
     }
     .h_inner ul {
-        width: 36.7vw;
+        width: 29.6vw;
     }
 
     .h_li {
@@ -1049,7 +1049,7 @@ li {
 
     .h_inner ul {
         margin-top: 10px;
-        width: 420px;
+        width: 340px;
     }
 
     .h_li {
