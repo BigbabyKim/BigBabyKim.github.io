@@ -399,7 +399,7 @@ li {
     width: 100%;
     padding: 0 10vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .slideBtn {
@@ -410,6 +410,7 @@ li {
     border: 0.5vw solid #666;
     color: #666;
     font-size: 4vw;
+    margin: 5vw;
 }
 
 .slideBtn:hover {
