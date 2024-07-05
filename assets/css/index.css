@@ -349,7 +349,7 @@ li {
     width: 100%;
     transition: 250ms;
     transform: scaleX(0);
-    border-bottom: 0.7vw solid #333;
+    border-bottom: 0.7vw solid #777;
 }
 
 .btn.slick-slide.slick-current {
@@ -406,17 +406,17 @@ li {
     width: 22vw;
     text-align: center;
     padding: 0.5vw;
-    border-radius: 2vw;
-    border: 0.5vw solid #666;
+    border-radius: 1vw;
     color: #666;
-    font-size: 4vw;
+    font-size: 3vw;
     margin: 5vw;
+    box-shadow: 0 1px 1px 0px rgba(68, 68, 68, .1);
+    transition: all 0.3s ease;
+    background: linear-gradient(180deg, #0000000f 0%, rgba(255, 255, 255, 0.75) 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
 }
 
 .slideBtn:hover {
-    border: 0.5vw solid #444;
-    color: #f3f3f3;
-    background-color: #333;
+    background: linear-gradient(180deg, #0000000f 0%, rgba(255, 255, 255, 0.75) 100%), linear-gradient(0deg, rgba(68, 68, 68, 0.8), #FFFFFF);
 }
 
 .pc2 {
@@ -672,15 +672,15 @@ li {
     }
 
     .btn span::after {
-        border-bottom: 0.4vw solid #333;
+        border-bottom: 0.25vw solid #333;
     }
 
     .btn.slick-slide.slick-current span::after {
-        border-bottom: 0.4vw solid #333;
+        border-bottom: 0.25vw solid #333;
     }
 
     .btn:hover span::after {
-        border-bottom: 0.4vw solid #333;
+        border-bottom: 0.25vw solid #333;
     }
 
     .slideImg {
@@ -693,13 +693,8 @@ li {
 
     .slideBtn {
         width: 15vw;
-        border: 0.1vw solid #666;
         font-size: 2.5vw;
         margin: 0 10vw;
-    }
-
-    .slideBtn:hover {
-        border: 0.1vw solid #444;
     }
 
     .m2_li.contact>.label {
@@ -963,9 +958,11 @@ li {
 
     .hiddenBtn {
         margin: 0 auto;
-        width: 8vw;
-        border: 1px solid #444;
-        color: #444;
+        width: 9vw;
+        box-shadow: 0 1px 1px 0px rgba(68, 68, 68, .2);
+        transition: all 0.3s ease;
+        background: linear-gradient(180deg, #0000000f 0%, rgba(255, 255, 255, 0.75) 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);    
+        color: #666;
         border-radius: 5px;
         font-size: 1.2vw;
         margin-bottom: 0.7vw;
@@ -973,8 +970,7 @@ li {
     }
 
     .hiddenBtn:hover {
-        color: #dadada;
-        background-color: #444;
+        background: linear-gradient(180deg, #0000000f 0%, rgba(255, 255, 255, 0.75) 100%), linear-gradient(0deg, rgba(68, 68, 68, 0.8), #FFFFFF);
     }
 
     .slideImg img {
