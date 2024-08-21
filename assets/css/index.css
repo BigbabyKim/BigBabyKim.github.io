@@ -414,6 +414,9 @@ li {
     transition: all 0.3s ease;
     background: linear-gradient(180deg, #0000000f 0%, rgba(255, 255, 255, 0.75) 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
 }
+.slideBtn.one{
+    margin: 1vw;
+}
 
 .slideBtn:hover {
     background: linear-gradient(180deg, #0000000f 0%, rgba(255, 255, 255, 0.75) 100%), linear-gradient(0deg, rgba(68, 68, 68, 0.8), #FFFFFF);
